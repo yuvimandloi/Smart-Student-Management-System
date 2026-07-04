@@ -210,7 +210,7 @@ console.log("CURRENT STATS =>", stats);
 
         <h3>Smart Student Management System</h3>
 
-        <p>Developed By Yuvraj Mandloi & Aniket Amode</p>
+        <p>Developed By Yuvraj Mandloi </p>
 
         <span>Manage • Track • Grow</span>
 

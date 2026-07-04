@@ -1,0 +1,272 @@
+/* 🔥 RESET */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* 🔥 MAIN LAYOUT */
+.app-container {
+  display: flex;
+}
+
+/* 🔥 SIDEBAR */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: #020617;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #1e293b;
+  display: flex;
+  flex-direction: column;
+}
+
+/* LOGO */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+/* Sidebar links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.sidebar ul li {
+  margin: 8px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #cbd5f5;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background: #1e293b;
+  color: #fff;
+}
+
+.sidebar ul li a.active {
+  background: #4f46e5;
+  color: white;
+}
+
+/* 🔥 MAIN CONTENT */
+.main-content {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🔥 HEADER */
+.header {
+  height: 60px;
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.search-box {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: white;
+  outline: none;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #6366f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* 🔥 INNER CONTENT */
+.content-area {
+  padding: 25px;
+}
+
+/* 🔥 DASHBOARD TITLE */
+.dashboard-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* 🔥 CARDS */
+.card-box {
+  padding: 25px;
+  border-radius: 14px;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.card-box h6 {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.card-box h2 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.card-box:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.card1 {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+}
+
+.card2 {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+}
+
+.card3 {
+  background: linear-gradient(135deg, #0891b2, #06b6d4);
+}
+
+/* 🔥 CHART CARD (UPDATED 🔥) */
+.chart-card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 14px;
+  height: 280px; /* 🔥 FIXED HEIGHT */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* 🔥 CHART TITLE */
+.chart-card h6 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* 🔥 CHART SIZE CONTROL */
+.chart-card canvas {
+  flex: 1 !important;
+  max-height: 200px;
+}
+
+/* 🔥 TABLE */
+.table {
+  background: #1e293b;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  background: #020617;
+  color: #fff;
+  font-weight: 500;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* 🔥 BUTTONS */
+.btn {
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #4f46e5;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+.btn-warning {
+  background-color: #f59e0b;
+  border: none;
+  color: black;
+}
+
+.btn-danger {
+  background-color: #ef4444;
+  border: none;
+}
+
+/* 🔥 INPUT */
+.form-control {
+  background: #020617;
+  color: white;
+  border: 1px solid #334155;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 1px #6366f1;
+}
+
+.form-control::placeholder {
+  color: #94a3b8;
+}
+
+/* 🔥 HEADINGS */
+h2, h4, h5 {
+  color: #f1f5f9;
+}
+
+/* 🔥 MODAL */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+}

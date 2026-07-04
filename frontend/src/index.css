@@ -1,0 +1,28 @@
+body {
+  background: #f5f7fb;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+/* Buttons */
+.btn-custom {
+  background: linear-gradient(135deg, #4e73df, #224abe);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background: linear-gradient(135deg, #224abe, #4e73df);
+}
+
+/* Card */
+.card-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
